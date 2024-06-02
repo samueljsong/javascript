@@ -1,5 +1,6 @@
 /**
  * Functions: main building blocks of code as they allow repetition of code.
+ *      - Functions will ALWAYS return something. if not specified -> undefined
  */
 
 function test() {
