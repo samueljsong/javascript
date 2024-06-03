@@ -45,3 +45,7 @@ function trial() {
 let x = trial();
 
 console.log(x);
+
+// A key difference between null and undefined is
+//      Null can be assigned explicitly
+//      Undefined is usually defined by the compiler when the code runs and it comes across an error.
