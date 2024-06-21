@@ -44,34 +44,37 @@ if (secondExpression) {
  * Passing a function as a parameter to another function.
  *      The idea is that we expect it to be "called back" later if necessary
  */
+// function confirm() {
+//     console.log("CONFIRM");
+// }
 
-function ask(question, yes, no) {
-    if (confirm(question)) yes();
-    else no();
-}
+// function ask(question, yes, no) {
+//     if (confirm(question)) yes();
+//     else no();
+// }
 
-function showOk() {
-    alert("You agreed.");
-}
+// function showOk() {
+//     alert("You agreed.");
+// }
 
-function showCancel() {
-    alert("You canceled the execution.");
-}
+// function showCancel() {
+//     alert("You canceled the execution.");
+// }
 
 // usage: functions showOk, showCancel are passed as arguments to ask
-ask("Do you agree?", showOk, showCancel);
+// ask("Do you agree?", showOk, showCancel);
 
 // But we can also use Function expression to declare the callback function inside the 'ask' function
 
-ask(
-    "Do you agree?",
-    function () {
-        alert("You agreed.");
-    },
-    function () {
-        alert("You canceled the execution.");
-    }
-);
+// ask(
+//     "Do you agree?",
+//     function () {
+//         alert("You agreed.");
+//     },
+//     function () {
+//         alert("You canceled the execution.");
+//     }
+// );
 
 // Just like global variables, if we use strict mode, a Function Declaration is block scoped.
 
